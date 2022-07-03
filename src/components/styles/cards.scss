@@ -120,14 +120,19 @@ $std-border-radius: 1vh;
     the resource colors
 **/
 .card-inside {
-  width: 85%;
-  height: 85%;
+  width: 100%;
+  height: 100%;
   border-radius: $std-border-radius * 0.7;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.card-inside {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 .card-inside.silk {
   background-image: url("../../assets/silk.png");
 }
@@ -140,15 +145,9 @@ $std-border-radius: 1vh;
 
 .card-inside.camel {
   background-image: url("../../assets/camel.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 .card-inside.back {
   background-image: url("../../assets/card-back.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 .card-inside.silver {
   background-image: url("../../assets/silver.png");
