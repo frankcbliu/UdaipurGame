@@ -23,7 +23,7 @@ class TurnIndicator extends Component {
         className={"turn-indicator " + (iAmActive ? "active" : null)}
         style={{ fontSize: "20px" }}
       >
-        {iAmActive ? "Your turn" : "Opponents turn"}
+        {iAmActive ? "轮到你了！" : "对方回合，请等候~"}
       </div>
     );
   }

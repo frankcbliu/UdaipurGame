@@ -1,4 +1,5 @@
 import {
+  ACTIONS,
   NUM_RESOURCES_END,
   RESOURCES,
   LARGEST_HERD_BONUS,
@@ -143,7 +144,7 @@ export const UdaipurGame = {
           board.push(G.deck.pop());
           board = board.filter((card) => card.id !== cardToTake.id);
         }
-        let actionString = `Player ${p} took one card (${cardToTake.type}) from the board.`;
+        let actionString = `P${p} took one card (${cardToTake.type}) from the board.`;
         G.board = board;
         G.chat.push({ player: p, action: actionString, automated: true });
         ctx.events.endTurn();
@@ -169,7 +170,7 @@ export const UdaipurGame = {
         let newPlayerCards = G.players[p].cards.filter(
           (card) => !replaceIDs.includes(card.id)
         );
-        let actionString = `Player ${p} traded some cards from his hand to the board.`;
+        let actionString = `P${p} traded some cards from his hand to the board.`;
         newBoard.push(...cardsToReplace);
         newPlayerCards.push(...cardsToRemove);
         G.players[p].cards = newPlayerCards;
@@ -188,7 +189,7 @@ export const UdaipurGame = {
         let newBoard = G.board.filter((card) => card.type !== RESOURCES.camel);
         let camels = G.board.filter((card) => card.type === RESOURCES.camel);
         const numCamels = camels.length;
-        let actionString = `Player ${p} took all the Camels from the board ( ${numCamels} Camels)`;
+        let actionString = `P${p} took all the Camels from the board ( ${numCamels} Camels)`;
         while (camels.length > 0) {
           newPlayerCards.push(camels.pop());
         }
@@ -227,7 +228,7 @@ export const UdaipurGame = {
             });
           }
         }
-        let actionString = `Player ${p} sold ${tradeSize} of their ${cardType} card(s) `;
+        let actionString = `P${p} sold ${tradeSize} of their ${cardType} card(s) `;
 
         if (tradeSize === 3) {
           G.players[p].T3 += 1;
