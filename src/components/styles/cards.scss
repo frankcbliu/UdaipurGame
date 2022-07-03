@@ -128,6 +128,11 @@ $std-border-radius: 1vh;
   justify-content: center;
 }
 
+.card-inside {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 .card-inside.silk {
   background-image: url("../../assets/silk.png");
 }
@@ -140,15 +145,9 @@ $std-border-radius: 1vh;
 
 .card-inside.camel {
   background-image: url("../../assets/camel.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 .card-inside.back {
   background-image: url("../../assets/card-back.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 .card-inside.silver {
   background-image: url("../../assets/silver.png");
