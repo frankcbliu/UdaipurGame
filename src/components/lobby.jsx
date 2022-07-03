@@ -18,15 +18,14 @@ import TemplatePage from "./templatePage";
 import { WEB_SERVER_URL, GAME_SERVER_URL, APP_PRODUCTION } from "../config.js";
 
 const api = new LobbyAPI();
-const server = APP_PRODUCTION
-  ? `https://${window.location.hostname}`
-  : GAME_SERVER_URL;
+const server = GAME_SERVER_URL;
 const GameClient = Client({
   game: UdaipurGame,
   board: UdaipurBoard,
   multiplayer: SocketIO({
     server: server,
   }),
+  debug: false,
 });
 class Lobby extends Component {
   state = {};
@@ -155,9 +154,7 @@ class Lobby extends Component {
   };
   gameExistsView = () => {
     const players = [0, 1];
-    const server = APP_PRODUCTION
-      ? `https://${window.location.hostname}`
-      : WEB_SERVER_URL;
+    const server = WEB_SERVER_URL;
     return (
       <>
         <div>Invite your friend by sending them the link below</div>

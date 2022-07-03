@@ -15,13 +15,12 @@ import MobileCover from "./components/mobileCover.jsx";
 
 function App() {
   const history = useHistory();
-  const server = APP_PRODUCTION
-    ? `https://${window.location.hostname}`
-    : GAME_SERVER_URL;
+  const server = GAME_SERVER_URL;
   const UdaipurClient = Client({
     game: UdaipurGame,
     board: UdaipurBoard,
     multiplayer: SocketIO({ server: server }),
+    debug: false
   });
   const renderUdaipurClient = () => {
     return <UdaipurClient playerID="0"></UdaipurClient>;
