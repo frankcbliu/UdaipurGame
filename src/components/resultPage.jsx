@@ -9,7 +9,7 @@ class ResultPage extends Component {
     const content = (
       <>
         <div>
-          {iWon ? "Congratulations you have won!" : "I'm afraid you have lost"}
+          {iWon ? "恭喜你赢了！！！!" : "GG思密达！！！惜败！！"}
         </div>
         <div class="scoreboard">
           <div
@@ -20,7 +20,7 @@ class ResultPage extends Component {
             }
           >
             <span class="username">
-              {playerID === "0" ? "You" : "Opponent"}
+              {playerID === "0" ? "你" : "对手"}
             </span>
             <span class="score">{gameOver.scores[0]}</span>
           </div>
@@ -32,7 +32,7 @@ class ResultPage extends Component {
             }
           >
             <span class="username">
-              {playerID === "1" ? "You" : "Opponent"}
+              {playerID === "1" ? "你" : "对手"}
             </span>
             <span class="score"> {gameOver.scores[1]}</span>
           </div>
