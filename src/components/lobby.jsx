@@ -15,7 +15,7 @@ import UdaipurBoard from "./board";
 import TemplatePage from "./templatePage";
 
 // Constants
-import { WEB_SERVER_URL, GAME_SERVER_URL, APP_PRODUCTION } from "../config.js";
+import { WEB_SERVER_URL, GAME_SERVER_URL } from "../config.js";
 
 const api = new LobbyAPI();
 const server = GAME_SERVER_URL;
