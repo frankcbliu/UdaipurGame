@@ -13,7 +13,16 @@ class Card extends Component {
   capitalize = (s) => {
     if (typeof s !== "string") return "";
     s = s.toLowerCase();
-    return s.toLowerCase().charAt(0).toUpperCase() + s.slice(1);
+    const toolTips = {
+      camel: "骆驼",
+      gold: "黄金",
+      silver: "银器",
+      diamond: "钻石",
+      silk: "丝绸",
+      leather: "皮革",
+      spices: "香料",
+    }
+    return toolTips[s];
   };
   getColorClass = () => {
     if (this.props.faceUp && this.props.card) {
@@ -53,7 +62,7 @@ class Card extends Component {
       >
         <div className={"card-inside " + this.getColorClass()}>
           {this.props.type === "DECK" ? (
-            <h3 color="white">{this.props.length}</h3>
+            <h3 color="white" style={{color: "white"}}>{this.props.length}</h3>
           ) : null}
         </div>
         <ReactTooltip />

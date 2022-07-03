@@ -4,48 +4,64 @@
   position: relative;
   padding: 2.5vh;
 }
-.coin-container.silk .coin {
-  background: #ce93d8;
-  box-shadow: -2px 2px 0px 1px rgba(192, 179, 194, 1);
+.coin .token {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-.coin-container.silk .coin:hover {
-  background: #9c64a6;
+.coin-container.silk .coin .token1 {
+  background-image: url("../../assets/goodsTokens/silk-token1.png");
 }
-.coin-container.spices .coin {
-  background: #66bb6a;
-  box-shadow: -2px 2px 0px 1px rgba(192, 179, 194, 1);
+.coin-container.silk .coin .token2 {
+  background-image: url("../../assets/goodsTokens/silk-token2.png");
 }
-.coin-container.spices .coin:hover {
-  background: #338a3e;
+.coin-container.silk .coin .token3 {
+  background-image: url("../../assets/goodsTokens/silk-token3.png");
 }
-.coin-container.leather .coin {
-  background: #8d6e63;
-  box-shadow: -2px 2px 0px 1px rgba(192, 179, 194, 1);
+.coin-container.silk .coin .token5 {
+  background-image: url("../../assets/goodsTokens/silk-token5.png");
 }
-.coin-container.leather .coin:hover {
-  background: #5f4339;
+.coin-container.spices .coin .token1 {
+  background-image: url("../../assets/goodsTokens/spice-token1.png");
 }
-.coin-container.silver .coin {
-  background: #346184;
-  box-shadow: -2px 2px 0px 1px rgba(192, 179, 194, 1);
+.coin-container.spices .coin .token2 {
+  background-image: url("../../assets/goodsTokens/spice-token2.png");
 }
-.coin-container.silver .coin:hover {
-  background: #003757;
+.coin-container.spices .coin .token3 {
+  background-image: url("../../assets/goodsTokens/spice-token3.png");
+}
+.coin-container.spices .coin .token5 {
+  background-image: url("../../assets/goodsTokens/spice-token5.png");
+}
+.coin-container.leather .coin .token1 {
+  background-image: url("../../assets/goodsTokens/leather-token1.png");
+}
+.coin-container.leather .coin .token2 {
+  background-image: url("../../assets/goodsTokens/leather-token2.png");
+}
+.coin-container.leather .coin .token3 {
+  background-image: url("../../assets/goodsTokens/leather-token3.png");
+}
+.coin-container.leather .coin .token4 {
+  background-image: url("../../assets/goodsTokens/leather-token4.png");
+}
+.coin-container.silver .coin .token5 {
+  background-image: url("../../assets/goodsTokens/silver-token.png");
 }
 
-.coin-container.gold .coin {
-  background: #ffc107;
-  box-shadow: -2px 2px 0px 1px rgba(192, 179, 194, 1);
+.coin-container.gold .coin .token5 {
+  background-image: url("../../assets/goodsTokens/gold-token5.png");
 }
-.coin-container.gold .coin:hover {
-  background: #c79100;
+.coin-container.gold .coin .token6 {
+  background-image: url("../../assets/goodsTokens/gold-token6.png");
 }
-.coin-container.diamond .coin {
-  background: #d32f2f;
-  box-shadow: -2px 2px 0px 1px rgba(192, 179, 194, 1);
+.coin-container.diamond .coin .token5 {
+  background-image: url("../../assets/goodsTokens/diamond-token5.png");
 }
-.coin-container.diamond .coin:hover {
-  background: #9a0007;
+.coin-container.diamond .coin .token7 {
+  background-image: url("../../assets/goodsTokens/diamond-token7.png");
 }
 
 .coin {

@@ -129,13 +129,13 @@ $std-border-radius: 1vh;
 }
 
 .card-inside.silk {
-  background: #ce93d8;
+  background-image: url("../../assets/silk.png");
 }
 .card-inside.spices {
-  background: #66bb6a;
+  background-image: url("../../assets/spices.png");
 }
 .card-inside.leather {
-  background: #8d6e63;
+  background-image: url("../../assets/leather.png");
 }
 
 .card-inside.camel {
@@ -145,16 +145,19 @@ $std-border-radius: 1vh;
   background-position: 50% 50%;
 }
 .card-inside.back {
-  background: #616161;
+  background-image: url("../../assets/card-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .card-inside.silver {
-  background: #346184;
+  background-image: url("../../assets/silver.png");
 }
 .card-inside.gold {
-  background: #ffc107;
+  background-image: url("../../assets/gold.png");
 }
 .card-inside.diamond {
-  background: #d32f2f;
+  background-image: url("../../assets/diamond.png");
 }
 h3 {
   font-family: "Varela Round";
